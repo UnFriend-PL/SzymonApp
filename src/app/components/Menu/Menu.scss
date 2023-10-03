@@ -1,0 +1,47 @@
+$nav-line-height: 1.6;
+
+#nav {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  background-color: rgb(26, 21, 39);
+  position: fixed;
+  top: 0;
+  z-index: 99;
+}
+@mixin tagImitator {
+  color: #757575;
+  font-weight: bolder;
+  line-height: $nav-line-height;
+}
+.tagImitator {
+  @include tagImitator();
+  font-size: 1.6rem;
+  &-small {
+    font-size: 1.4rem;
+    @include tagImitator();
+  }
+}
+.tagName {
+  color: white;
+  font-weight: bolder;
+  font-size: 1.6rem;
+  line-height: $nav-line-height;
+}
+
+.nav-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-end;
+  align-items: flex-end;
+  min-width: 80%;
+}
+.nav-wrap {
+  li {
+    margin: 1%;
+  }
+}

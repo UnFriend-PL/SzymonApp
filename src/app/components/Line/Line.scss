@@ -1,0 +1,18 @@
+$left-margin: 25%;
+$displayIndex: 9;
+.line {
+  width: 3px;
+  height: 100vh;
+  position: absolute;
+  background-color: #c400cb;
+  top: 0;
+  left: $left-margin;
+  z-index: $displayIndex;
+}
+.lineName {
+  z-index: $displayIndex;
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: $left-margin + 1;
+}
