@@ -6,7 +6,6 @@ const words = ["develop websites", "coding", "thinking"];
 export default function About() {
   return (
     <>
-      <Line sectionName={"About"}></Line>
       <section
         id="#About"
         className="about"
@@ -14,26 +13,16 @@ export default function About() {
           backgroundImage: `url(${bg.src})`,
         }}
       >
+        <Line sectionName={"About"}></Line>
+
         <div className="about-curtain">
           <span className="about-firstLine">Hello, my name is </span>
           <h1>
             <strong className="about-name">Szymon Marcinkowski</strong>
           </h1>
-          <span className="about-secondLine">
-            I <em className="">LOVE</em> develop websites
-            <div class="roller">
-              <span id="rolltext">
-                HTML
-                <br />
-                CSS
-                <br />
-                Curiosity
-                <br />
-                <span id="spare-time">too much spare time?</span>
-                <br />
-              </span>
-            </div>
-          </span>
+          <div className="about-secondLine">
+            I <em className="">LOVE</em> develop
+          </div>
         </div>
       </section>
     </>
