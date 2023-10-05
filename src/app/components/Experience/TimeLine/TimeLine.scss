@@ -1,7 +1,6 @@
 @import "../../variables";
 $font-color: #eaeaea;
 $line-color: #f0f8ff80;
-$company-color: #d181ff;
 .timeLine {
   position: relative;
   left: -10vw;
@@ -44,7 +43,7 @@ $company-color: #d181ff;
     padding: 1vw;
   }
   &-date.selectedDate {
-    color: $company-color;
+    color: $accent-text-color;
   }
   &-content {
     position: absolute;
@@ -65,7 +64,7 @@ $company-color: #d181ff;
       line-height: 0.8rem;
     }
     &-company {
-      color: $company-color;
+      color: $accent-text-color;
       font-weight: bold;
       font-size: 1.6rem;
       line-height: 1.1;

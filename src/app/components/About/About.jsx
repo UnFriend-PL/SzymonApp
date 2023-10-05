@@ -1,8 +1,9 @@
 import "./About.scss";
 import bg from "../../../../public/img/background.jpg";
 import Line from "../Line/Line";
+import Messenger from "./Messenger";
 
-const words = ["develop websites", "coding", "thinking"];
+const messages = ["develop websites", "programming", "thinking"];
 export default function About() {
   return (
     <>
@@ -21,7 +22,8 @@ export default function About() {
             <strong className="about-name">Szymon Marcinkowski</strong>
           </h1>
           <div className="about-secondLine">
-            I <em className="">LOVE</em> develop
+            I <em className="">LOVE </em>
+            <Messenger messages={messages} />
           </div>
         </div>
       </section>
