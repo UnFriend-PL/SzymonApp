@@ -1,5 +1,5 @@
 import "./Experience.scss";
-import TimeLine from "./TimeLine/TimeLine";
+import TimeLine from "../TimeLine/TimeLine";
 import bg from "../../../../public/img/experience.jpg";
 import Line from "../Line/Line";
 
@@ -7,23 +7,23 @@ const title = "Experience";
 const datas = [
   {
     date: "Now",
-    content: "Skontaktuj się ze mną :)",
-    company: "Jobless",
+    content: "Please contact with me :)",
+    company: "Looking for job",
     months: "08.2023 - Now",
     position: "",
   },
   {
     date: "2023",
     content:
-      "Na tym stanowisku byłem odpowiedzialny za tworzenie zautomatyzowanych testów i aplikacji przy użyciu języka programowania C#. Przeprowadzałem procesy walidacji, aby zapewnić dokładność i niezawodność naszych rozwiązań programowych.  Byłem odpowiedzialny za konfigurację maszyn w celu wydajnego uruchamiania naszego oprogramowania. Brałem udział w ulepszaniu środowiska programistycznego, aby ułatwić rozwój naszego oprogramowania.",
+      "In my role, I was responsible for developing automated tests and software applications using the C# programming language. I conducted validation processes to ensure the accuracy and reliability of our software solutions.  I was in charge of configuring machines to run our software efficiently. I took part in improving the development environment to facilitate the development of our software.",
     company: "Solidigm",
     months: "08.2022 - 08.2023",
     position: "Intern Software Engineer",
   },
   {
-    date: "2023",
+    date: "2022",
     content:
-      "W mojej roli zapewniałem obsługę klienta poprzez prezentowanie ofert banku klientom. Dodatkowo byłem odpowiedzialny za archiwizację i organizację dokumentów w banku.",
+      "In my role, I provided customer service by presenting the bank's offers to clients. Additionally, I was responsible for document archiving and organization within the bank.",
     company: "mBank ",
     months: "01.2022 - 08.2022",
     position: "Assistant",
@@ -31,10 +31,26 @@ const datas = [
   {
     date: "2020",
     content:
-      "Modernizacja elektronicznego systemu zamówień, Modernizacja systemu sprzedaży biletów.",
+      "Modernization of the electronic order system, Modernization of the ticket sales system.",
     company: "InfoComp",
     months: "08.2020 - 10.2020",
     position: "Front End Developer",
+  },
+
+  {
+    date: "2020",
+    content: "Developing the company's internal project ",
+    company: "InfoComp",
+    months: "06.2020 - 07.2020",
+    position: "School Internship",
+  },
+  {
+    date: "2020",
+    content:
+      "I helped customers who called with their technical problems and took calls.",
+    company: "TellBridge",
+    months: "04.2020 - 07.2020",
+    position: "Helpdesk/Office Assistant",
   },
 ];
 export default function Experience() {

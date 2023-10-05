@@ -52,10 +52,38 @@ a .selected {
   align-content: center;
   justify-content: flex-end;
   align-items: flex-end;
+  position: relative;
   min-width: 80%;
 }
 .nav-wrap {
   li {
     margin: 1%;
+  }
+}
+.nav-menuButton {
+  display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  .nav-menuButton {
+    display: block;
+    position: absolute;
+    right: 1%;
+    top: 1%;
+    z-index: 101;
+  }
+  .nav-wrap {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease-out;
+    &.open {
+      max-height: 100vh;
+    }
+  }
+  .tagName {
+    font-size: 1.4rem;
+  }
+  .tagImitator {
+    font-size: 1.8rem;
   }
 }

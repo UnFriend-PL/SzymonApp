@@ -28,3 +28,16 @@ $displayIndex: 9;
   z-index: $displayIndex;
   position: absolute;
 }
+@media only screen and (max-width: 1200px) {
+  .line {
+    left: $left-margin - 5;
+  }
+  .lineName {
+    left: $left-margin - 4;
+    top: 10vh;
+  }
+  .linePoint {
+    background-color: $first-accent-color;
+    top: 10vh + 1.2;
+  }
+}

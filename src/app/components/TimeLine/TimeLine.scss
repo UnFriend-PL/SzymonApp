@@ -1,7 +1,6 @@
-@import "../../variables";
+@import "../variables";
 $font-color: #eaeaea;
 $line-color: #f0f8ff80;
-$company-color: #d181ff;
 .timeLine {
   position: relative;
   left: -10vw;
@@ -22,7 +21,6 @@ $company-color: #d181ff;
 .timeLine-title {
   position: absolute;
   top: -6%;
-  left: -4vw;
   color: $font-color;
   font-size: 1.4rem;
   font-weight: bold;
@@ -41,10 +39,11 @@ $company-color: #d181ff;
     width: fit-content;
     background-color: $section-color;
     font-weight: bold;
-    padding: 1vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
   }
   &-date.selectedDate {
-    color: $company-color;
+    color: $accent-text-color;
   }
   &-content {
     position: absolute;
@@ -65,7 +64,7 @@ $company-color: #d181ff;
       line-height: 0.8rem;
     }
     &-company {
-      color: $company-color;
+      color: $accent-text-color;
       font-weight: bold;
       font-size: 1.6rem;
       line-height: 1.1;
@@ -89,7 +88,6 @@ $company-color: #d181ff;
   animation-name: fadeOut;
 }
 .timeLine-dateWrap-content.fadeIn.moreContent {
-  // height: 60vh;
   z-index: 10;
   transition-duration: 1s;
 }
@@ -109,5 +107,57 @@ $company-color: #d181ff;
   }
   100% {
     opacity: 0;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .timeLine {
+    // margin-top: 20vh;
+    height: 60%;
+    left: -25vw;
+  }
+  .timeLine-title {
+    top: -8%;
+    left: -10vw;
+  }
+  .timeLine-dateWrap {
+    &-date {
+      padding-top: 2vw;
+      padding-bottom: 2vw;
+    }
+    &-date.selectedDate {
+      color: $accent-text-color;
+    }
+    &-content {
+      min-width: 60vw;
+      max-width: 65vw;
+      padding: 2vh;
+      left: 8vw;
+    }
+  }
+
+  .timeLine-dateWrap {
+    &-content {
+      &-months {
+        color: $line-color;
+        font-size: 0.7rem;
+        line-height: 0.7rem;
+      }
+      &-company {
+        color: $accent-text-color;
+        font-weight: bold;
+        font-size: 1.2rem;
+        line-height: 1.1;
+      }
+      &-position {
+        color: $font-color;
+        font-size: 0.9rem;
+        line-height: 1;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 575px) {
+  .timeLine-title {
+    display: none;
   }
 }
