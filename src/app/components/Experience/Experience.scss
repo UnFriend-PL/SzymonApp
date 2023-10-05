@@ -1,0 +1,18 @@
+@import "../variables";
+.experience {
+  scroll-snap-align: start;
+  min-height: 100vh;
+  height: 100vh;
+  min-width: 100vw;
+  overflow-x: hidden;
+  background-color: $section-color;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

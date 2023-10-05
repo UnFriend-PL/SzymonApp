@@ -1,35 +1,49 @@
-$nav-line-height: 1.6;
-
+@import "../variables";
+$nav-line-height: 2rem;
+$selected-color: #ffffff;
+$tag-Name: #ffffff;
+$tag-Name-small: #a1a1a1;
 #nav {
   width: 100vw;
-  height: 10vh;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
   align-items: center;
-  background-color: rgb(26, 21, 39);
+  box-shadow: inset 0 35px 14px $main-color;
   position: fixed;
   top: 0;
   z-index: 99;
 }
 @mixin tagImitator {
-  color: #757575;
-  font-weight: bolder;
+  color: $first-accent-color;
   line-height: $nav-line-height;
+  padding: 1%;
 }
 .tagImitator {
   @include tagImitator();
-  font-size: 1.6rem;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  margin-left: 5%;
+
   &-small {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
+    color: $second-accent-color !important;
     @include tagImitator();
   }
 }
 .tagName {
-  color: white;
+  color: $tag-Name;
   font-weight: bolder;
   font-size: 1.6rem;
   line-height: $nav-line-height;
+  &-small {
+    color: $tag-Name-small;
+    font-weight: 800;
+  }
+}
+a .selected {
+  color: $selected-color;
+  transition-duration: 1s;
 }
 
 .nav-wrap {

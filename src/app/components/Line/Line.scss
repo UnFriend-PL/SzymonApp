@@ -1,10 +1,12 @@
-$left-margin: 25%;
+@import "../variables";
+$left-margin: 15%;
+$top-margin: 15%;
 $displayIndex: 9;
 .line {
   width: 3px;
-  height: 100vh;
+  height: 100%;
   position: absolute;
-  background-color: #c400cb;
+  background-color: $first-accent-color;
   top: 0;
   left: $left-margin;
   z-index: $displayIndex;
@@ -13,6 +15,16 @@ $displayIndex: 9;
   z-index: $displayIndex;
   position: absolute;
   color: white;
-  top: 50%;
+  top: $top-margin;
   left: $left-margin + 1;
+}
+.linePoint {
+  width: 15px;
+  height: 15px;
+  background-color: $first-accent-color;
+  top: $top-margin + 1.1;
+  left: -6px;
+  border-radius: 50%;
+  z-index: $displayIndex;
+  position: absolute;
 }
