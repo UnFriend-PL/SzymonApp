@@ -1,0 +1,63 @@
+@import "../variables";
+
+.education {
+  scroll-snap-align: start;
+  min-height: 100vh;
+  height: 100vh;
+  min-width: 100vw;
+  overflow-x: hidden;
+  background-color: $section-color;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.education-button {
+  color: white;
+  position: absolute;
+  padding: 1%;
+  border-radius: 35px;
+  top: 45%;
+  left: 25%;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  transition-duration: 1s;
+}
+.education-button:hover {
+  animation-play-state: paused;
+  transform: scale(1.1);
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .education {
+    height: 120vh;
+  }
+  .education-button {
+    font-size: 1.1rem;
+    left: 65vw;
+    top: 20vh;
+  }
+}
+@media only screen and (max-width: 812px) {
+  .education {
+    height: 140vh;
+  }
+}

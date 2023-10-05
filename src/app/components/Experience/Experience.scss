@@ -2,7 +2,7 @@
 .experience {
   scroll-snap-align: start;
   min-height: 100vh;
-  height: 120vh;
+  height: 130vh;
   min-width: 100vw;
   overflow-x: hidden;
   background-color: $section-color;
@@ -15,4 +15,15 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media only screen and (max-width: 1200px) {
+  .experience {
+    height: 140vh;
+  }
+}
+@media only screen and (max-width: 812px) {
+  .experience {
+    height: 165vh;
+  }
 }

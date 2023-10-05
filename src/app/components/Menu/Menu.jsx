@@ -2,12 +2,16 @@
 import Image from "next/image";
 import "./Menu.scss";
 import { React, useState } from "react";
-
-const menuLinks = ["Start", "About", "Experience", "Education"];
+import menuSvg from "../../../../public/img/menu.svg";
+const menuLinks = ["Start", "Experience", "Education", "About"];
 
 export default function Menu() {
   const [selectedLinkIndex, setSelectedLinkIndex] = useState(0);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
   return (
     <>
       <nav id="nav" className="nav">
@@ -16,8 +20,18 @@ export default function Menu() {
           <span className="tagName">UnFriend</span>
           <span className="tagImitator">{"/>"}</span>
         </a>
-        <button hidden={true}>Menu</button>
-        <ul className="nav-wrap">
+        <button className="nav-menuButton" onClick={toggleMenu}>
+          <span>
+            <Image
+              src={menuSvg}
+              alt="menu"
+              layout="responsive"
+              width={500}
+              height={300}
+            />{" "}
+          </span>
+        </button>
+        <ul className={`nav-wrap ${isMenuOpen ? "open" : ""}`}>
           {menuLinks.map((link, index) => (
             <li
               key={index}
@@ -25,7 +39,7 @@ export default function Menu() {
                 setSelectedLinkIndex(index);
               }}
             >
-              <a href="#start">
+              <a href={`#${link}`}>
                 <span
                   className={`tagName-small ${
                     selectedLinkIndex == index ? "selected" : ""

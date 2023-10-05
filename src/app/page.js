@@ -1,14 +1,16 @@
 import Image from "next/image";
 import Menu from "./components/Menu/Menu";
-import About from "./components/About/About";
+import Start from "./components/About/Start";
 import Experience from "./components/Experience/Experience";
+import Education from "./components/Education/Education";
 
 export default function Home() {
   return (
     <main>
       <Menu></Menu>
-      <About></About>
+      <Start></Start>
       <Experience></Experience>
+      <Education></Education>
     </main>
   );
 }

@@ -1,5 +1,5 @@
 import "./Experience.scss";
-import TimeLine from "./TimeLine/TimeLine";
+import TimeLine from "../TimeLine/TimeLine";
 import bg from "../../../../public/img/experience.jpg";
 import Line from "../Line/Line";
 
