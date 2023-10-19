@@ -1,0 +1,91 @@
+@import "../../variables";
+
+@import url("https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css");
+
+.skills-wrap {
+  scroll-snap-align: start;
+  min-height: 100vh;
+  height: 100vh;
+  min-width: 100vw;
+  overflow-x: hidden;
+  background-color: rgb(16, 15, 15);
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+.skils-squares-wrap {
+  flex-basis: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.skills-square {
+  padding: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  margin: 1%;
+  flex-basis: 25%;
+  border-color: solid 1px $line-color;
+  min-height: 15vh;
+  // background-color: $first-accent-color;
+  background-color: #252525;
+  color: $font-color;
+  &-title {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    &-icon {
+      max-width: 50%;
+      font-size: 325%;
+      line-height: 1;
+    }
+    &-text {
+      color: $font-color;
+      font-weight: bolder;
+      font-size: 1.2em;
+    }
+  }
+}
+// .skills-line-wrap {
+//   width: 100vw;
+//   height: fit-content;
+//   display: flex;
+//   justify-content: flex-end;
+//   align-items: flex-start;
+//   align-content: flex-start;
+//   flex-wrap: wrap;
+//   color: $font-color;
+//   background-color: #333333;
+//   &:hover {
+//     background-color: $second-accent-color;
+//   }
+//   &-content {
+//     flex-basis: 80%;
+//     .object {
+//       color: rgb(68, 55, 211);
+//     }
+//     .function {
+//       color: rgb(253, 255, 106);
+//     }
+//     .tag {
+//       color: rgb(255, 186, 57);
+//     }
+//     .neutral {
+//       color: rgb(136, 217, 240);
+//     }
+//     .return {
+//       color: rgb(182, 47, 182);
+//     }
+//   }
+// }

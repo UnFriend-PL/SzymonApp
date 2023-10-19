@@ -10,10 +10,8 @@
   },
   "dependencies": {
     "next": "latest",
-    "prismjs": "^1.29.0",
     "react": "latest",
-    "react-dom": "latest",
-    "react-syntax-highlighter": "^15.5.0"
+    "react-dom": "latest"
   },
   "devDependencies": {
     "autoprefixer": "latest",
