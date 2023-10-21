@@ -3,7 +3,7 @@ import Image from "next/image";
 import "./Menu.scss";
 import { React, useState } from "react";
 import menuSvg from "../../../../public/img/menu.svg";
-const menuLinks = ["Start", "Experience", "Education", "About"];
+const menuLinks = ["Start", "Experience", "Skills", "Education", "Contact"];
 
 export default function Menu() {
   const [selectedLinkIndex, setSelectedLinkIndex] = useState(0);
@@ -51,12 +51,6 @@ export default function Menu() {
               </a>
             </li>
           ))}
-          {/* <li>
-            <a href="#start">
-              <span className="tagName-small">Start</span>
-              <span className="tagImitator-small">{"/>"}</span>
-            </a>
-          </li> */}
         </ul>
       </nav>
     </>

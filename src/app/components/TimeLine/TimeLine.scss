@@ -37,7 +37,6 @@ $line-color: #f0f8ff80;
   &-date {
     position: absolute;
     width: fit-content;
-    background-color: $section-color;
     font-weight: bold;
     padding-top: 1vw;
     padding-bottom: 1vw;
@@ -111,7 +110,6 @@ $line-color: #f0f8ff80;
 }
 @media only screen and (max-width: 1200px) {
   .timeLine {
-    // margin-top: 20vh;
     height: 60%;
     left: -25vw;
   }

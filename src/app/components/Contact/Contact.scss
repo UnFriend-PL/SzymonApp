@@ -1,0 +1,96 @@
+@import "../variables.scss";
+.contact {
+  scroll-snap-align: start;
+  min-height: 100vh;
+  min-width: 100vw;
+  overflow-x: hidden;
+  background-color: $section-color;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.contact-title {
+  font-weight: 600;
+  font-size: 450%;
+  animation: gradient 15s ease infinite;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  background-size: 400% 400%;
+  flex-basis: 100%;
+  text-align: center;
+}
+.contact-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-basis: 75%;
+  color: white;
+  &-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-basis: 35%;
+    text-align: center;
+    font-weight: 500;
+    margin: 5%;
+    & .material-icons {
+      animation: gradient 15s ease infinite;
+      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+      background-size: 400% 400%;
+      font-size: 650%;
+    }
+    &-text {
+      flex-basis: 100%;
+      font-size: 110%;
+      color: $line-color;
+    }
+    & a {
+      flex-basis: 100%;
+      font-size: 150%;
+    }
+  }
+}
+@media only screen and (max-width: 812px) {
+  .contact {
+    min-height: 140vh;
+  }
+  .contact-title {
+    margin-top: 25%;
+    font-size: 400%;
+  }
+  .contact-wrap {
+    &-section {
+      flex-basis: 100%;
+      & .material-icons {
+        font-size: 650%;
+      }
+      &-text {
+        font-size: 110%;
+      }
+      & a {
+        font-size: 100%;
+      }
+    }
+  }
+}
