@@ -1,8 +1,6 @@
 "use client";
 import "./Education.scss";
-import bg from "../../../../public/img/education.svg";
-import bgm from "../../../../public/img/education-mobile.svg";
-
+import bg from "../../../../public/img/education.jpg";
 import Line from "../Line/Line";
 import TimeLine from "../TimeLine/TimeLine";
 import { useState } from "react";

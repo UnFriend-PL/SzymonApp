@@ -1,11 +1,9 @@
 @import "../../variables";
-
 @import url("https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css");
-
 .skills-wrap {
   scroll-snap-align: start;
-  min-height: 100vh;
-  height: 100vh;
+  // min-height: 100vh;
+  min-height: 100vh + 40;
   min-width: 100vw;
   overflow-x: hidden;
   background-color: rgb(16, 15, 15);
@@ -15,6 +13,9 @@
   justify-content: space-around;
   align-items: center;
   align-content: center;
+  background: linear-gradient(-45deg, #252525, #100f0f, #100f0f, #252525);
+  animation: gradient 10s ease infinite;
+  background-size: 400% 400%;
 }
 .skils-squares-wrap {
   flex-basis: 75%;
@@ -33,11 +34,10 @@
   align-content: flex-start;
   margin: 1%;
   flex-basis: 25%;
-  border-color: solid 1px $line-color;
-  min-height: 15vh;
-  // background-color: $first-accent-color;
+  border-color: 1px solid $line-color;
   background-color: #252525;
   color: $font-color;
+  transition-duration: 1s;
   &-title {
     width: 100%;
     display: flex;
@@ -46,9 +46,17 @@
     align-items: center;
     align-content: center;
     &-icon {
-      max-width: 50%;
-      font-size: 325%;
+      flex-basis: 100%;
+      text-align: center;
+      font-size: 425%;
       line-height: 1;
+      animation: gradient 15s ease infinite;
+      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+      background-size: 400% 400%;
     }
     &-text {
       color: $font-color;
@@ -56,36 +64,16 @@
       font-size: 1.2em;
     }
   }
+  &:hover {
+    transform: scale(1.05);
+  }
 }
-// .skills-line-wrap {
-//   width: 100vw;
-//   height: fit-content;
-//   display: flex;
-//   justify-content: flex-end;
-//   align-items: flex-start;
-//   align-content: flex-start;
-//   flex-wrap: wrap;
-//   color: $font-color;
-//   background-color: #333333;
-//   &:hover {
-//     background-color: $second-accent-color;
-//   }
-//   &-content {
-//     flex-basis: 80%;
-//     .object {
-//       color: rgb(68, 55, 211);
-//     }
-//     .function {
-//       color: rgb(253, 255, 106);
-//     }
-//     .tag {
-//       color: rgb(255, 186, 57);
-//     }
-//     .neutral {
-//       color: rgb(136, 217, 240);
-//     }
-//     .return {
-//       color: rgb(182, 47, 182);
-//     }
-//   }
-// }
+
+@media only screen and (max-width: 980px) {
+  .skills-wrap {
+    justify-content: flex-end;
+  }
+  .skils-squares-wrap {
+    flex-basis: 90%;
+  }
+}

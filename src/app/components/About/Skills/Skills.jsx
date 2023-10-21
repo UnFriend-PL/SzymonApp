@@ -29,95 +29,40 @@ import "./Skills.scss";
 
 export default function Skills() {
   const data = [
-    { lang: "C#", class: "devicon-csharp-plain", text: "" },
-    { lang: "C#", class: "devicon-csharp-plain", text: "" },
+    { title: "Csharp", class: "devicon-csharp-plain" },
+    { title: "JavaScript", class: "devicon-javascript-plain" },
+    { title: "Java", class: "devicon-java-plain" },
+    { title: "React", class: "devicon-react-original" },
+    { title: "HTML", class: "devicon-html5-plain" },
+    { title: "CSS", class: "devicon-css3-plain" },
+    { title: "SQL", class: "devicon-mysql-plain" },
+    { title: "GitHub", class: "devicon-github-plain" },
+    { title: "Communication skills", class: "" },
+    { title: "Can-do attitude", class: "" },
+    { title: "Attention to detail", class: "" },
+    { title: "Problem-solving", class: "" },
+    { title: "Perseverance", class: "" },
+    { title: "Teamwork", class: "" },
+    { title: "Creativity", class: "" },
   ];
   return (
     <section id="Skills" className="skills-wrap">
       <div className="skils-squares-wrap">
-        <div className="skills-square">
-          <div className="skills-square-title">
-            <div className="skills-square-title-icon">
-              <i class="devicon-csharp-plain"></i>
-            </div>
-            <div className="skills-square-title-text">
-              Programming Languages
-            </div>
-          </div>
-          <div className="skills-square-content">
-            <div className="skills-square-content-skill">c#</div>
-          </div>
-        </div>
-        <div className="skills-square">
-          <div className="skills-square-title">
-            <div className="skills-square-title-icon">IMG</div>
-            <div className="skills-square-title-text">
-              Programming Languages
+        {data.map((skill, index) => (
+          <div className="skills-square" key={index}>
+            <div className="skills-square-title">
+              {skill.class !== "" ? (
+                <div className="skills-square-title-icon">
+                  <i className={skill.class}></i>
+                </div>
+              ) : (
+                <></>
+              )}
+              <div className="skills-square-title-text">{skill.title}</div>
             </div>
           </div>
-          <div className="skills-square-content">
-            <div className="skills-square-content-skill">c#</div>
-          </div>
-        </div>
-        <div className="skills-square">
-          <div className="skills-square-title">
-            <div className="skills-square-title-icon">IMG</div>
-            <div className="skills-square-title-text">
-              Programming Languages
-            </div>
-          </div>
-          <div className="skills-square-content">
-            <div className="skills-square-content-skill">c#</div>
-          </div>
-        </div>{" "}
-        <div className="skills-square">
-          <div className="skills-square-title">
-            <div className="skills-square-title-icon">IMG</div>
-            <div className="skills-square-title-text">
-              Programming Languages
-            </div>
-          </div>
-          <div className="skills-square-content">
-            <div className="skills-square-content-skill">c#</div>
-          </div>
-        </div>{" "}
-        <div className="skills-square">
-          <div className="skills-square-title">
-            <div className="skills-square-title-icon">IMG</div>
-            <div className="skills-square-title-text">
-              Programming Languages
-            </div>
-          </div>
-          <div className="skills-square-content">
-            <div className="skills-square-content-skill">c#</div>
-          </div>
-        </div>{" "}
-        <div className="skills-square">
-          <div className="skills-square-title">
-            <div className="skills-square-title-icon">IMG</div>
-            <div className="skills-square-title-text">
-              Programming Languages
-            </div>
-          </div>
-          <div className="skills-square-content">
-            <div className="skills-square-content-skill">c#</div>
-          </div>
-        </div>
+        ))}
       </div>
-      {/* <div className="skills-line-wrap">
-        <pre className="skills-line-wrap-content">
-          <span className="object">function </span>
-          <span className="function">Skills</span>
-          <span className="tag">{`(){`}</span>
-        </pre>
-      </div>
-      <div className="skills-line-wrap">
-        <div className="skills-line-wrap">
-          <pre className="skills-line-wrap-content">
-            <span className="tag">{`}`}</span>
-          </pre>
-        </div>
-      </div> */}
       <Line sectionName={"Skills"}></Line>
     </section>
   );
