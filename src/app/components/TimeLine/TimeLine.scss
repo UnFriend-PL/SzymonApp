@@ -51,9 +51,7 @@ $line-color: #f0f8ff80;
     width: fit-content;
     padding: 2vh;
     left: 5vw;
-    // background-color: rgba(240, 248, 255, 0.05);
-    background-color: rgba(0, 0, 0, 0.5);
-
+    background-color: rgba(240, 248, 255, 0.05);
     border-radius: 15px;
     border: 1px solid $line-color;
     opacity: 0;
@@ -112,7 +110,6 @@ $line-color: #f0f8ff80;
 }
 @media only screen and (max-width: 1200px) {
   .timeLine {
-    // margin-top: 20vh;
     height: 60%;
     left: -25vw;
   }

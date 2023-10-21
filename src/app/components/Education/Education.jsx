@@ -3,7 +3,7 @@ import "./Education.scss";
 import bg from "../../../../public/img/education.jpg";
 import Line from "../Line/Line";
 import TimeLine from "../TimeLine/TimeLine";
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 const educationTitle = "Education";
 const certificatesTitle = "Certificates";
@@ -67,6 +67,8 @@ export default function Education() {
   const handleChangeTimeLine = () => {
     setIsDisplayingCertificates((prev) => !prev);
   };
+  const educationRef = useRef();
+
   return (
     <section
       id="Education"

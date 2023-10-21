@@ -10,7 +10,7 @@ export default function Contact() {
   return (
     <section
       id="Contact"
-      class="contact"
+      className="contact"
       style={{
         backgroundImage: `url(${bg.src})`,
       }}
@@ -18,13 +18,35 @@ export default function Contact() {
       <div className="contact-title">GET IN TOUCH</div>
       <dvi className="contact-wrap">
         <div className="contact-wrap-section">
-          <Image width={250} height={250} src={phone}></Image>
+          <span className="material-icons">phone_android</span>
+          <span className="contact-wrap-section-text"> Call to me</span>
           <a href="tel:+48600029636">+48 600 029 636</a>
         </div>
         <div className="contact-wrap-section">
-          <Image width={250} height={250} src={email}></Image>
+          <span className="material-icons">email</span>
+          <span className="contact-wrap-section-text"> Send me an email</span>
           <a href="mailto:szymonecki1233@gmail.com">
             szymonecki1233@gamail.com
+          </a>
+        </div>
+        <div className="contact-wrap-section">
+          <i className="devicon-linkedin-plain material-icons"></i>
+          <span className="contact-wrap-section-text"> Connect with me</span>
+          <a
+            href="https://www.linkedin.com/in/szymonmarcinkowski20/"
+            target="_blank"
+          >
+            Szymon Marcinkowski
+          </a>
+        </div>
+        <div className="contact-wrap-section">
+          <i className="devicon-github-original material-icons"></i>
+          <span className="contact-wrap-section-text">
+            {" "}
+            Check my repositories
+          </span>
+          <a href="https://github.com/UnFriend-PL" target="_blank">
+            UnFriendPL
           </a>
         </div>
       </dvi>

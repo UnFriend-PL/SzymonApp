@@ -1,31 +1,5 @@
-"use client";
-import { useEffect } from "react";
-import Line from "../../Line/Line";
+import Line from "../Line/Line";
 import "./Skills.scss";
-
-// var code = [
-//   "namespace SzymonSkillsApp {",
-//   "   internal class Program {",
-//   "       static void Main(string[] args) {",
-//   '           Console.WriteLine("Hello, World!");',
-//   "       }",
-//   "   }",
-//   "}",
-// ];
-
-// var code1 = (line) => {
-//   var x = line.split(" ");
-//   return (
-//     <>
-//       {x.map((element, index) => (
-//         <div key={index} className={element}>
-//           {element}
-//         </div>
-//       ))}
-//       <pre></pre>
-//     </>
-//   );
-// };
 
 export default function Skills() {
   const data = [
