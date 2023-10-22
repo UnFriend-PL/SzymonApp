@@ -4,7 +4,14 @@ import "./Menu.scss";
 import { React, useEffect, useState } from "react";
 import menuSvg from "../../../../public/img/menu.svg";
 import { useMenuContext } from "@/app/services/MenuContext";
-const menuLinks = ["Start", "Experience", "Skills", "Education", "Contact"];
+const menuLinks = [
+  "Start",
+  "Experience",
+  "Skills",
+  "Education",
+  "Contact",
+  "Interests",
+];
 
 export default function Menu() {
   const [selectedLinkIndex, setSelectedLinkIndex] = useState(0);

@@ -6,6 +6,7 @@ import Education from "./components/Education/Education";
 import Skills from "./components/Skills/Skills";
 import Contact from "./components/Contact/Contact";
 import { MenuContextProvider } from "./services/MenuContext";
+import Interests from "./components/Interests/Interests";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <Skills></Skills>
         <Education></Education>
         <Contact></Contact>
+        <Interests></Interests>
       </MenuContextProvider>
     </main>
   );
