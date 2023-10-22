@@ -1,0 +1,81 @@
+@import "../variables.scss";
+.interests {
+  scroll-snap-align: start;
+  min-height: 100vh;
+  min-width: 100vw;
+  overflow-x: hidden;
+  background: #100f0f;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+}
+.interests h1 {
+  flex-basis: 70%;
+  margin: 5%;
+  text-align: center;
+  color: white;
+  font-weight: 800;
+  font-size: 400%;
+}
+.interests-wrap {
+  margin: 5%;
+  flex-basis: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  &-element {
+    flex-basis: 20%;
+    background-color: #252525;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0 0 3% 0;
+    &-title {
+      text-align: center;
+      margin: 0 0 0 0;
+      background-color: #100f0f;
+      color: $accent-text-color;
+      font-weight: 600;
+      font-size: 200%;
+      text-transform: uppercase;
+      flex-basis: 100%;
+    }
+    &-icon {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: #100f0f;
+      justify-content: center;
+      flex-basis: 100%;
+      margin: 0 1%;
+      overflow: hidden;
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .interests h1 {
+    flex-basis: 80%;
+  }
+  .interests-wrap {
+    flex-basis: 80%;
+    &-element {
+      flex-basis: 50%;
+    }
+  }
+}
+@media only screen and (max-width: 576px) {
+  .interests h1 {
+    margin-top: 30%;
+  }
+  .interests-wrap {
+    &-element {
+      flex-basis: 100%;
+    }
+  }
+}
