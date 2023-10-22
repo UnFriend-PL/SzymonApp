@@ -1,3 +1,4 @@
+"use client";
 import "./Contact.scss";
 import bg from "../../../../public/img/contact.jpg";
 import email from "../../../../public/img/email.svg";
@@ -5,10 +6,16 @@ import phone from "../../../../public/img/phone.svg";
 
 import Line from "../Line/Line";
 import Image from "next/image";
+import { useMenuContext } from "@/app/services/MenuContext";
 
 export default function Contact() {
+  const { currentSection, setCurrentSection } = useMenuContext();
+
   return (
     <section
+      onMouseOver={() => {
+        setCurrentSection("Contact");
+      }}
       id="Contact"
       className="contact"
       style={{

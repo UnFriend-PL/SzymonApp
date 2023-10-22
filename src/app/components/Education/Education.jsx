@@ -3,7 +3,8 @@ import "./Education.scss";
 import bg from "../../../../public/img/education.jpg";
 import Line from "../Line/Line";
 import TimeLine from "../TimeLine/TimeLine";
-import { useState, useRef } from "react";
+import { useState } from "react";
+import { useMenuContext } from "@/app/services/MenuContext";
 
 const educationTitle = "Education";
 const certificatesTitle = "Certificates";
@@ -67,10 +68,13 @@ export default function Education() {
   const handleChangeTimeLine = () => {
     setIsDisplayingCertificates((prev) => !prev);
   };
-  const educationRef = useRef();
+  const { currentSection, setCurrentSection } = useMenuContext();
 
   return (
     <section
+      onMouseOver={() => {
+        setCurrentSection("Education");
+      }}
       id="Education"
       className="education"
       style={{

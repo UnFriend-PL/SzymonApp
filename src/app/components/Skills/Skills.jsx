@@ -1,7 +1,11 @@
+"use client";
+import { useMenuContext } from "@/app/services/MenuContext";
 import Line from "../Line/Line";
 import "./Skills.scss";
 
 export default function Skills() {
+  const { currentSection, setCurrentSection } = useMenuContext();
+
   const data = [
     { title: "Csharp", class: "devicon-csharp-plain" },
     { title: "JavaScript", class: "devicon-javascript-plain" },
@@ -20,7 +24,13 @@ export default function Skills() {
     { title: "Creativity", class: "" },
   ];
   return (
-    <section id="Skills" className="skills-wrap">
+    <section
+      id="Skills"
+      className="skills-wrap"
+      onMouseOver={() => {
+        setCurrentSection("Skills");
+      }}
+    >
       <div className="skils-squares-wrap">
         {data.map((skill, index) => (
           <div className="skills-square" key={index}>

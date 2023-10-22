@@ -1,7 +1,9 @@
+"use client";
 import "./Experience.scss";
 import TimeLine from "../TimeLine/TimeLine";
 import bg from "../../../../public/img/experience.jpg";
 import Line from "../Line/Line";
+import { useMenuContext } from "@/app/services/MenuContext";
 
 const title = "Experience";
 const datas = [
@@ -54,8 +56,13 @@ const datas = [
   },
 ];
 export default function Experience() {
+  const { currentSection, setCurrentSection } = useMenuContext();
+
   return (
     <section
+      onMouseOver={() => {
+        setCurrentSection("Experience");
+      }}
       id="Experience"
       className="experience"
       style={{
