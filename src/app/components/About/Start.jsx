@@ -1,13 +1,20 @@
+"use client";
 import "./Start.scss";
 import bg from "../../../../public/img/background.jpg";
 import Line from "../Line/Line";
 import Messenger from "./Messenger";
+import { useMenuContext } from "@/app/services/MenuContext";
 
 const messages = ["develop websites", "programming", "thinking"];
 export default function Start() {
+  const { currentSection, setCurrentSection } = useMenuContext();
+
   return (
     <>
       <section
+        onMouseOver={() => {
+          setCurrentSection("Start");
+        }}
         id="Start"
         className="start"
         style={{
