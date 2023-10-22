@@ -1,17 +1,24 @@
 "use client";
 import Image from "next/image";
 import "./Menu.scss";
-import { React, useState } from "react";
+import { React, useEffect, useState } from "react";
 import menuSvg from "../../../../public/img/menu.svg";
+import { useMenuContext } from "@/app/services/MenuContext";
 const menuLinks = ["Start", "Experience", "Skills", "Education", "Contact"];
 
 export default function Menu() {
   const [selectedLinkIndex, setSelectedLinkIndex] = useState(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { currentSection, setCurrentSection } = useMenuContext();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  useEffect(() => {
+    let findSectionIndex = menuLinks.indexOf(currentSection);
+    setSelectedLinkIndex(findSectionIndex);
+  }, [currentSection]);
   return (
     <>
       <nav id="nav" className="nav">

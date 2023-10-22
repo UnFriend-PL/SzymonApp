@@ -5,16 +5,19 @@ import Experience from "./components/Experience/Experience";
 import Education from "./components/Education/Education";
 import Skills from "./components/Skills/Skills";
 import Contact from "./components/Contact/Contact";
+import { MenuContextProvider } from "./services/MenuContext";
 
 export default function Home() {
   return (
     <main>
-      <Menu></Menu>
-      <Start></Start>
-      <Experience></Experience>
-      <Skills></Skills>
-      <Education></Education>
-      <Contact></Contact>
+      <MenuContextProvider>
+        <Menu></Menu>
+        <Start></Start>
+        <Experience></Experience>
+        <Skills></Skills>
+        <Education></Education>
+        <Contact></Contact>
+      </MenuContextProvider>
     </main>
   );
 }
