@@ -10,7 +10,7 @@ export const metadata = {
   keywords:
     "web development, programming, technology, automation, developer, programmer, freelancer, WSB Code research club, freelancer, portfolio, web cv",
   author: "Szymon Marcinkowski",
-  image: "./img/coding.png",
+  image: "./img/background.jpg",
   url: "https://www.sMarcinkowski.com",
   type: "website",
 };
