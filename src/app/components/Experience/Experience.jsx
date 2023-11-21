@@ -9,7 +9,7 @@ const title = "Experience";
 const datas = [
   {
     date: "Now",
-    content: "Please contact with me :)",
+    content: "Please contact me :)",
     company: "Looking for job",
     months: "08.2023 - Now",
     position: "",
@@ -48,8 +48,7 @@ const datas = [
   },
   {
     date: "2020",
-    content:
-      "I helped customers who called with their technical problems and took calls.",
+    content: "I took calls and helped customers with their technical problems",
     company: "TellBridge",
     months: "04.2020 - 07.2020",
     position: "Helpdesk/Office Assistant",
