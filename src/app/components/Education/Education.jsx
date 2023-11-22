@@ -12,7 +12,7 @@ const education = [
   {
     date: "Now",
     content: "Engineer in Computer Science - spec. 'Programming'",
-    company: "WSB Merito Universit",
+    company: "WSB Merito University",
     months: "10.2021 - Now",
     position: "Computer science engineer",
   },
