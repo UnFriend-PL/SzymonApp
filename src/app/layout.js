@@ -8,10 +8,10 @@ export const metadata = {
   description:
     "Inquisitive and determined web developer, programmer, and freelancer. Passionate about technology and programming.",
   keywords:
-    "web development, programming, technology, automation, developer, programmer, freelancer, WSB Code research club, freelancer, portfolio, web cv",
+    "szymon marcinkowski, marcinkowski, portfolio, cv, web development, programming, technology, automation, developer, programmer, freelancer, WSB Code research club, freelancer, portfolio, web cv",
   author: "Szymon Marcinkowski",
   image: "./img/coding.png",
-  url: "https://www.sMarcinkowski.com",
+  url: "https://smarcinkowski.pl",
   type: "website",
 };
 
