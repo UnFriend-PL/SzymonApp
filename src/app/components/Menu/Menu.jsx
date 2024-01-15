@@ -9,6 +9,7 @@ const menuLinks = [
   "Experience",
   "Skills",
   "Education",
+  "Portfolio",
   "Contact",
   "Interests",
 ];
