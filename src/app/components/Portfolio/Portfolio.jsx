@@ -41,6 +41,7 @@ export default function Portfolio() {
                 <Image
                   src={item.image}
                   alt={item.title}
+                  unoptimized
                   layout="responsive"
                   width={500}
                   height={300}
