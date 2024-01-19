@@ -11,7 +11,7 @@
   "dependencies": {
     "fortawesome": "^0.0.1-security",
     "material-icons": "^1.13.12",
-    "next": "latest",
+    "next": "^14.0.4",
     "react": "latest",
     "react-dom": "latest"
   },

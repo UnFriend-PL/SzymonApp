@@ -37,13 +37,7 @@ export default function Menu() {
         </a>
         <button className="nav-menuButton" onClick={toggleMenu}>
           <span>
-            <Image
-              src={menuSvg}
-              alt="menu"
-              layout="responsive"
-              width={500}
-              height={300}
-            />{" "}
+            <Image src={menuSvg} alt="menu" objectFit="cover" />
           </span>
         </button>
         <ul className={`nav-wrap ${isMenuOpen ? "open" : ""}`}>
