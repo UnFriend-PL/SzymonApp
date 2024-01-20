@@ -36,7 +36,12 @@ export default function Portfolio() {
           <Line sectionName={"Portfolio"}></Line>
 
           {portfolio.map((item, index) => (
-            <div className="portfolio-wrap-item" key={index}>
+            <div
+              className="portfolio-wrap-item"
+              key={index}
+              data-aos={index % 2 == 0 ? "fade-up-right" : "fade-up-left"}
+              data-aos-duration="1000"
+            >
               <div className="portfolio-wrap-item-image">
                 <Image
                   src={item.image}

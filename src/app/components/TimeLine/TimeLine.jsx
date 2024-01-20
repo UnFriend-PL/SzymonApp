@@ -14,12 +14,23 @@ export default function TimeLine({ title, datas }) {
   };
   return (
     <div className="timeLine">
-      <div className="timeLine-title">
+      <div
+        className="timeLine-title"
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="750"
+      >
         <h2>{title}</h2>
       </div>
       <div className="timeLine-wrap">
         {datas.map((data, index) => (
-          <div className="timeLine-dateWrap" key={index}>
+          <div
+            className="timeLine-dateWrap"
+            key={index}
+            data-aos="fade-left"
+            data-aos-easing="linear"
+            data-aos-duration="750"
+          >
             <div
               className={`timeLine-dateWrap-date ${
                 selectedDateContentIndex === index ? "selectedDate" : ""
@@ -31,6 +42,7 @@ export default function TimeLine({ title, datas }) {
             </div>
 
             <div
+              // data-aos="fade-right"
               className={`timeLine-dateWrap-content ${
                 selectedDateContentIndex === null ||
                 selectedDateContentIndex === index

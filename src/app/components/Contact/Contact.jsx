@@ -22,21 +22,23 @@ export default function Contact() {
         backgroundImage: `url(${bg.src})`,
       }}
     >
-      <div className="contact-title">GET IN TOUCH</div>
+      <div className="contact-title" data-aos="fade-up">
+        GET IN TOUCH
+      </div>
       <dvi className="contact-wrap">
-        <div className="contact-wrap-section">
+        <div className="contact-wrap-section" data-aos="fade-up">
           <span className="material-icons">phone_android</span>
           <span className="contact-wrap-section-text"> Call to me</span>
           <a href="tel:+48600029636">+48 600 029 636</a>
         </div>
-        <div className="contact-wrap-section">
+        <div className="contact-wrap-section" data-aos="fade-up">
           <span className="material-icons">email</span>
           <span className="contact-wrap-section-text"> Send me an email</span>
           <a href="mailto:szymonecki1233@gmail.com">
             szymonecki1233@gamail.com
           </a>
         </div>
-        <div className="contact-wrap-section">
+        <div className="contact-wrap-section " data-aos="fade-up">
           <i className="devicon-linkedin-plain material-icons"></i>
           <span className="contact-wrap-section-text"> Connect with me</span>
           <a
@@ -46,10 +48,9 @@ export default function Contact() {
             Szymon Marcinkowski
           </a>
         </div>
-        <div className="contact-wrap-section">
+        <div className="contact-wrap-section" data-aos="fade-up">
           <i className="devicon-github-original material-icons"></i>
           <span className="contact-wrap-section-text">
-            {" "}
             Check my repositories
           </span>
           <a href="https://github.com/UnFriend-PL" target="_blank">

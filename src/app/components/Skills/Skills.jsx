@@ -23,6 +23,7 @@ export default function Skills() {
     { title: "Teamwork", class: "" },
     { title: "Creativity", class: "" },
   ];
+
   return (
     <section
       id="Skills"
@@ -33,7 +34,7 @@ export default function Skills() {
     >
       <div className="skils-squares-wrap">
         {data.map((skill, index) => (
-          <div className="skills-square" key={index}>
+          <div className="skills-square" key={index} data-aos="fade-up">
             <div className="skills-square-title">
               {skill.class !== "" ? (
                 <div className="skills-square-title-icon">
