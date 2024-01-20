@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "fortawesome": "^0.0.1-security",
     "material-icons": "^1.13.12",
     "next": "^14.0.4",

@@ -26,7 +26,9 @@ export default function Start() {
         <div className="start-curtain">
           <span className="start-firstLine">Hello, my name is </span>
           <h1>
-            <strong className="start-name">Szymon Marcinkowski</strong>
+            <strong className="start-name" data-aos-delay="50">
+              Szymon Marcinkowski
+            </strong>
           </h1>
           <div className="start-secondLine">
             I <em className="">LOVE </em>

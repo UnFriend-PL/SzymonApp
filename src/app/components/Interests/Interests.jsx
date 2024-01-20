@@ -33,10 +33,14 @@ export default function Interests() {
       id="Interests"
       className="interests"
     >
-      <h1>I LIKE</h1>
+      <h1 data-aos="fade-up">I LIKE</h1>
       <div className="interests-wrap">
         {data.map((element, index) => (
-          <div className="interests-wrap-element" key={index}>
+          <div
+            className="interests-wrap-element"
+            key={index}
+            data-aos={index % 2 == 0 ? "fade-right" : "fade-left"}
+          >
             <div className="interests-wrap-element-icon">
               <Image
                 width={100}
