@@ -13,7 +13,8 @@
     "material-icons": "^1.13.12",
     "next": "^14.0.4",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "sharp": "^0.33.5"
   },
   "devDependencies": {
     "autoprefixer": "latest",

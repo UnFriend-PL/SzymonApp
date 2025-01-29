@@ -6,4 +6,5 @@ module.exports = {
   sassOptions: {
     includePaths: [path.join(__dirname, "styles")],
   },
+  trailingSlash: true, // Ensure proper linking of paths in static export
 };

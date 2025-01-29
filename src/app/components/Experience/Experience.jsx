@@ -9,10 +9,11 @@ const title = "Experience";
 const datas = [
   {
     date: "Now",
-    content: "Please contact me :)",
-    company: "Looking for job",
-    months: "08.2023 - Now",
-    position: "",
+    content:
+      "Development of systems integrating data between applications in .Net. Development of new cloud-compatible systems based on queues. Refactoring of existing solutions and migration to .net 8 compliant versions. Presentation of projects to the business",
+    company: "Currenda",
+    months: "06.2024 - Now",
+    position: "Junior Backend Developer",
   },
   {
     date: "2023",

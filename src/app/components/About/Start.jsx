@@ -29,7 +29,7 @@ export default function Start() {
             <strong className="start-name">Szymon Marcinkowski</strong>
           </h1>
           <div className="start-secondLine">
-            I <em className="">LOVE </em>
+            I <em className="love">LOVE </em>
             <Messenger messages={messages} />
           </div>
         </div>
